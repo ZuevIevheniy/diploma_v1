@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/diploma_v1/',
   plugins: [react()],
+  server: {
+    historyApiFallback: true
+  }
 })
